@@ -89,7 +89,7 @@ class MovieController extends Controller
     		'description' => 'required',
     		'image' => 'required|image',
     		'poster' => 'required|image',
-    		'rating' => 'required',
+    		'rating' => 'required|between:0,10.00',
     		'year'=>'required',
     		'categories'=>'required|array|min:1'
 

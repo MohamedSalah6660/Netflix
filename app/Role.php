@@ -8,7 +8,10 @@ class Role extends LaratrustRole
 {
 	protected $fillable = ['name'];
 
-
+  	// public function users()
+   //  {
+   //      return $this->belongsToMany(User::class, 'role_user');
+   //  }
 
 	public function scopewhenSearch($query, $search)
 	{

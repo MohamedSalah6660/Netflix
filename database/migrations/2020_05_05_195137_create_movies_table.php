@@ -19,10 +19,11 @@ class CreateMoviesTable extends Migration
             $table->string('description')->nullable();
             $table->string('path')->nullable();
             $table->string('year')->nullable();
-            $table->string('rating')->nullable();
+            $table->decimal('rating',3 ,1)->nullable();
             $table->string('percent')->default(0);
             $table->string('image')->nullable();
             $table->string('poster')->nullable();
+            $table->string('views')->default(0);
             $table->timestamps();
         });
     }

@@ -7,7 +7,7 @@ return [
             'roles' => 'c,r,u,d',
             'users' => 'c,r,u,d',
             'movies' => 'c,r,u,d',
-            'settings' => 'c,u',
+            'settings' => 'c,u,r',
             
         ],
         'admin' => [],

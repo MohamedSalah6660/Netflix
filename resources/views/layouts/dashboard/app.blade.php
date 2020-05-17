@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta name="description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
    
     <title>Netflix</title>
     <meta charset="utf-8">
@@ -10,7 +11,6 @@
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard_files/css/main.css')}}">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <script src="{{asset('dashboard_files/js/jquery-3.3.1.min.js')}}"></script>
     

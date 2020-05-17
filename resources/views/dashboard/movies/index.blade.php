@@ -120,7 +120,7 @@
         					@if(auth()->user()->hasPermission('update_movies'))
 
 							<a href="{{ route('dashboard.movies.edit', $movie->id) }}" class="btn btn-info btn-sm">
-								<i class="fa fa-edit">Show & Edit</i>
+								<i class="fa fa-edit">Edit</i>
 							</a>
 							@endif
 

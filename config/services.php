@@ -29,15 +29,16 @@ return [
         'secret' => env('AWS_SECRET_ACCESS_KEY'),
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
-    'facebook' => [
-        'client_id' => env('FACEBOOK_CLIENT_ID'),
-        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
-        'redirect' => env('FACEBOOK_REDIRECT_URL'),
+
+'facebook' => [
+    'client_id' => '288422148984125',
+    'client_secret' => 'f2925991dc9ba5dcbf9fdcfdb2002fca',
+    'redirect' => 'http://localhost:8000/callback/facebook'
     ],
 
-       'googl' => [
-        'client_id' => env('GOOGLE_CLIENT_ID'),
-        'client_secret' => env('GOOGLE_CLIENT_SECRET'),
-        'redirect' => env('GOOGLE_REDIRECT_URL'),
+    'google' => [
+    'client_id' => '496370166236-j8ceoavdpgvnt9o9n5pgf4m0emmnqcsp.apps.googleusercontent.com',
+    'client_secret' => 't5rRpzmK-YrYoDY1TvytdSh7',
+    'redirect' => 'http://localhost:8000/callback/google'
     ],
 ];

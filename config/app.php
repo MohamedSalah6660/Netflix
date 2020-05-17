@@ -178,7 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Yoeunes\Toastr\ToastrServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
-
+        Laravel\Socialite\SocialiteServiceProvider::class
     ],
 
     /*
@@ -232,8 +232,8 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
      'FFMpeg' => Pbmedia\LaravelFFMpeg\FFMpegFacade::class,
-     'Image' => Intervention\Image\Facades\Image::class
-
+     'Image' => Intervention\Image\Facades\Image::class,
+     'Socialite' => Laravel\Socialite\Facades\Socialite::class
 
     ],
 

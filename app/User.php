@@ -21,6 +21,8 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+
+    protected $withCount = ['movies'];
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -38,6 +40,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public function movies()
+    {
+        return $this->belongsToMany(Movie::class, 'user_movie');
+    }
+    // public function roles()
+    // {
+    //     return $this->belongsToMany(Role::class, 'role_user');
+    // }
 
     public function getNameAttribute($value)
     {
@@ -89,10 +101,9 @@ class User extends Authenticatable
 
             return $q->whereNotIn('name', (array)$role_name)
                     ->whereNotIn('id', (array)$role_name); // to use role_id in scopewhenRole function
-;
 
         });
     }
 
-
+  
 }

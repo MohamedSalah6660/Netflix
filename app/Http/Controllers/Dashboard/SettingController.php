@@ -7,12 +7,6 @@ use Illuminate\Http\Request;
 
 class SettingController extends Controller
 {
-    public function social_login()
-    {
-    	return view('dashboard.settings.social_login');
-    }
-
-
      public function social_links()
     {
     	return view('dashboard.settings.social_links');

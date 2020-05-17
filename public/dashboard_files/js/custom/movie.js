@@ -17,8 +17,7 @@ $(document).ready(function() {
 
 		$('#movie-name').val(movieName);
 
-		console.log(url);
-		var formData = new  FormData();
+ 		var formData = new  FormData();
 
 		formData.append('movie_id' , movieId);
 		formData.append('name' , movieName);
@@ -52,7 +51,7 @@ $(document).ready(function() {
 							$('#upload-progress').html(Math.round(movieWhileProcessing.percent) + '%');
 
 						
-							if(movieWhileProcessing.percent == 100)
+							if(Math.round(movieWhileProcessing.percent) == 100)
 							{
 								//  To avoid send request many time and exauste the server
 								clearInterval(interval);
@@ -81,7 +80,7 @@ $(document).ready(function() {
 				if(evt.lengthComputable){
 
 					var percentComplete = Math.round(evt.loaded / evt.total * 100 ) + "%";
-					$('#upload-progress').css('width', percentComplete).html(percentComplete)
+					$('#upload-progress').css('width', percentComplete).html(percentComplete);
 
 				}
 				}, false);
