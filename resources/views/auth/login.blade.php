@@ -36,9 +36,22 @@
                         </div>
                     </div>
 
+                        <div class="form-group">
+                        <div class="custom-control custom-checkbox">
+                         
+
+                                @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <button class="btn btn-primary btn-block">Login</button>
                     </div>
+
 
                     <p class="text-center">Create new account<a href="{{ route('register') }}"> Register</a></p>
 

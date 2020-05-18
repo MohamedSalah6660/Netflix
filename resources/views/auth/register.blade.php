@@ -49,8 +49,8 @@
                     <p class="text-center">Already have an account<a href="{{ route('login') }}"> Login</a></p>
 
                     <hr>
-                    <a href="/login/facebook" class="btn btn-block btn-primary" style="background:#3b5998;"><span class="fab fa-facebook-f"></span> Login by facebook</a>
-                    <a href="/login/google" class="btn btn-block btn-primary" style="background:#ea4335;"><span class="fab fa-google"></span> Login by Gmail</a>
+                    <a href="{{ url('redirect/facebook') }}" class="btn btn-block btn-primary" style="background:#3b5998;"><span class="fa fa-facebook-f"></span> Register by facebook</a>
+                    <a href="{{ url('redirect/google') }}" class="btn btn-block btn-primary" style="background:#ea4335;"><span class="fa fa-google"></span> Register by Gmail</a>
 
                 </form><!-- end of form -->
 
