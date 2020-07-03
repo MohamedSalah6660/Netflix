@@ -79,6 +79,9 @@ class UserController extends Controller
     		'role_id' => 'required|numeric'
     	]);
 
+        $request->merge(['password'=>bcrypt($request->password)]);
+
+
     	$user->update($request->all());
     	$user->syncRoles(['admin',$request->role_id]);
 
